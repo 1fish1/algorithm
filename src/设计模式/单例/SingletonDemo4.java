@@ -28,4 +28,12 @@ public class SingletonDemo4 {
         }
         return singleton;
     }
+
+    public static void main(String[] args) {
+        SingletonDemo4 s = SingletonDemo4.getSingleton();
+        SingletonDemo4 s2 = SingletonDemo4.getSingleton();
+        System.out.println(s == s2);
+        System.out.println("s2=" + s2.hashCode());
+        System.out.println("s=" + s.hashCode());
+    }
 }

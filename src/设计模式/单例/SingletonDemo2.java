@@ -20,5 +20,11 @@ public class SingletonDemo2 {
         }
         return singletonDemo;
     }
-
+    public static void main(String[] args) {
+        SingletonDemo2 s = SingletonDemo2.getInstance();
+        SingletonDemo2 s2 = SingletonDemo2.getInstance();
+        System.out.println(s == s2);
+        System.out.println("s2=" + s2.hashCode());
+        System.out.println("s=" + s.hashCode());
+    }
 }

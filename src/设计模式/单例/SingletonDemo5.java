@@ -29,5 +29,11 @@ public class SingletonDemo5 {
     public static final SingletonDemo5 getInstance() {
         return SingletonHolder.INSTANCE;
     }
-
+    public static void main(String[] args) {
+        SingletonDemo5 s = SingletonDemo5.getInstance();
+        SingletonDemo5 s2 = SingletonDemo5.getInstance();
+        System.out.println(s == s2);
+        System.out.println("s2=" + s2.hashCode());
+        System.out.println("s=" + s.hashCode());
+    }
 }
