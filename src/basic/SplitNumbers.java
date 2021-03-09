@@ -25,8 +25,6 @@ public class SplitNumbers {
                 System.out.println(i);
                 break;
             }
-
-
         }
 
     }
